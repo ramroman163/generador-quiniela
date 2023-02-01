@@ -81,7 +81,34 @@ input:focus{
 
 .numeros-generados{
     color: white;
-    font-size: 2.5rem;text-shadow: 2px 2px 30px black;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 30px black;
+}
+
+.boton-copiar{
+    background: transparent;
+    height: auto;
+    width: auto;
+    border: none;
+    display: none;
+}
+
+.icono-copiar{
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 30px black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.icono-copiar:hover{
+    transform: scale(1.2);
+}
+
+.contenedor-numeros-generados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
